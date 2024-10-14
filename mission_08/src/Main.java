@@ -44,7 +44,7 @@ public class Main {
                     long taxPerBase = calcTaxBase(taxableIncome, rates[i]);
                     tax += taxPerBase;
                     System.out.printf("   %,d * %.0f%% = %,d\n", taxableIncome + prevBase - prevBase, rates[i] * 100, taxPerBase);
-                    prevBase = income; // 마지막 브래킷으로 설정
+                    prevBase = income;
                     break;
                 }
             }
